@@ -2,7 +2,7 @@ INSTALL=install -p
 PREFIX=/usr
 
 BINDIR=$(DESTDIR)$(PREFIX)/bin
-UNITDIR=$(DESTDIR)$(shell pkg-config systemd --variable systemduserunitdir)
+UNITDIR=$(DESTDIR)$(shell pkg-config systemd --variable systemdsystemunitdir)
 
 TARGET=auto-xflux
 SERVICE=$(TARGET).service
