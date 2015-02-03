@@ -11,6 +11,9 @@ Internet connection to already be established and assumes that the following ser
 
 This also obviously requires [xflux](https://justgetflux.com/linux.html) (to be accessible in $PATH).
 
+## Modification
+Only acquire IPv4 address.
+
 ## Installation
 
 ### Arch Linux
