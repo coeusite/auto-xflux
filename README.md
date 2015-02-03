@@ -13,9 +13,6 @@ This also obviously requires [xflux](https://justgetflux.com/linux.html) (to be 
 
 ## Modification
 Only acquire IPv4 address.
-Install systemd service to systemdsystemunitdir (/lib/systemd/system)
-
-Require root permission
 
 ## Installation
 
