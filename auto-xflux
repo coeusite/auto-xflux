@@ -19,7 +19,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # get external IP address
-declare -r ADDR="`curl -s icanhazip.com`"
+declare -r ADDR="`curl -4 icanhazip.com`"
 
 # geocode IP address
 declare -r GEOCODE_URL="www.geocodeip.com"
