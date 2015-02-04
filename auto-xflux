@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # auto-xflux
 # inputless xflux daemon that geocodes based on your external IP address
