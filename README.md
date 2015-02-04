@@ -12,7 +12,10 @@ Internet connection to already be established and assumes that the following ser
 This also obviously requires [xflux](https://justgetflux.com/linux.html) (to be accessible in $PATH).
 
 ## Modification
-Only acquire IPv4 address.
+- Only acquire IPv4 address.
+- Fix bug on negative lat/long
+- Modified for Debian Jessie KDE
+  - Use /bin/bash instead of /bin/sh in order to support Debian KDE
 
 ## Installation
 
@@ -32,3 +35,7 @@ and uninstalled by runnning:
     make [DESTDIR=DIRECTORY] uninstall
 
 DESTDIR is included for installing to a non-root (/) location.
+
+#### Debian Jessie KDE
+add ```/usr/bin/auto-xflux``` to auto startup in order to start after login
+add ```kill $(ps aU $USER | pgrep 'xflux' | awk '{print $1}')``` to auto start (shutdown) to kill xflux after logout
