@@ -37,5 +37,5 @@ and uninstalled by runnning:
 DESTDIR is included for installing to a non-root (/) location.
 
 #### Debian Jessie KDE
-add ```/usr/bin/auto-xflux``` to auto startup in order to start after login
-add ```kill $(ps aU $USER | pgrep 'xflux' | awk '{print $1}')``` to auto start (shutdown) to kill xflux after logout
+- add ```/usr/bin/auto-xflux``` to auto startup in order to start after login
+- add ```kill $(ps aU $USER | pgrep 'xflux' | awk '{print $1}')``` to auto start (shutdown) to kill xflux after logout
