@@ -39,3 +39,4 @@ DESTDIR is included for installing to a non-root (/) location.
 #### Debian Jessie KDE
 - add ```/usr/bin/auto-xflux``` to startup scripts in order to start after boot
 - add ```kill $(ps aU $USER | pgrep 'xflux' | awk '{print $1}')``` to shutdown scripts to kill xflux after logout
+- Replace ```exec `which xflux```` by /path/to/xflux if the script does not work.
